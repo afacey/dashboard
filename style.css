@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+body.morning {
+  background-image: url(./assets/morning.jpeg);
+}
+
+body.afternoon {
+  color: #fefefe;
+  /* background-image: url(./assets/afternoon.jpeg); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(./assets/afternoon.jpeg);
+}
+
+body.evening {
+  color: #fefefe;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.4) 30%
+    ),
+    url(./assets/evening.jpg);
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 5rem 0;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+time {
+  font-size: 8rem;
+  letter-spacing: 2px;
+}
